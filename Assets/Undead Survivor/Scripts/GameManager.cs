@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
         health = maxHealth;
 
         player.gameObject.SetActive(true);
-        uiLevelUp.Select(playerId % 4);
+        uiLevelUp.Select(playerId % 2);
         Resume();
     }
 
