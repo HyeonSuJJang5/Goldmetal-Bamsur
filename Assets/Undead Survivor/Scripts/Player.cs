@@ -32,6 +32,12 @@ public class Player : MonoBehaviour
         anim.runtimeAnimatorController = animCon[GameManager.instance.playerId];
     }
 
+    void Update()
+    {
+        if (!GameManager.instance.isLive)
+            return;
+    }
+
     void FixedUpdate()
     {
         if (!GameManager.instance.isLive)
